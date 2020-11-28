@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --ioslink-color: hsl(171, 66%, 44%);
+  --maclink-color: hsl(233, 100%, 69%);
+  --header-color: hsl(210, 10%, 33%);
+  --p-color: hsl(201, 11%, 66%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 0;
+  font-size: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(./bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--header-color);
+  font-weight: bold;
+}
+p {
+  color: var(--p-color);
+}
+.container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.header-text {
+  margin-top: 100px;
+}
+.header-text h1 {
+  font-size: 46px;
+}
+.header-text p {
+  font-size: 22px;
+  margin-bottom: 70px;
+}
+nav ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 20px 40px;
+  margin: 10px;
+  align-content: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+#ios {
+  background-color: var(--ioslink-color);
+}
+#mac {
+  background-color: var(--maclink-color);
+}
+.track,
+.middle,
+.workflow {
+  margin-top: 150px;
+  padding: 10px 10px;
+}
+.track,
+.middle,
+.workflow h2 {
+  font-size: 35px;
+}
+.track,
+.middle,
+.workflow p {
+  font-size: 19px;
+}
+
+/* middle */
+
+.function {
+  display: flex;
+  margin-top: 50px;
+}
+.computer-image {
+  margin-left: 0px;
+}
+.benefits {
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 200px;
+}
+.benefits p {
+  font-size: 19px;
+  margin-bottom: 60px;
+}
+.middle img {
+  display: block;
+  margin: 100px auto 0px;
+  width: 65%;
+}
+.workflow {
+  margin-top: 10px;
+}
+
+/* bottom */
+
+.bottom,
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px auto;
+}
+.b1,
+.b2,
+.b3 {
+  flex-basis: 27%;
+}
+
+/* company section */
+
+.company {
+  margin-top: 150px;
+}
+.low h2 {
+  font-size: 35px;
+}
+.low p {
+  font-size: 19px;
+}
+
+/* footer */
+.close {
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 150px;
+}
+.down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 120px;
+}
+.down-left {
+  display: flex;
+  flex-basis: 80%;
+  justify-content: space-between;
+}
+.contact {
+  display: flex;
+  justify-content: flex-start;
+}
+.down-right {
+  display: flex;
+}
+.down-right img {
+  margin: 0px 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.bl-logo img {
+  width: 80px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.contact ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0px 10px;
+}
+.contact ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--header-color);
+}
+.con12,
+.con34,
+.con5 {
+  flex-basis: 30%;
+}
+.contact ul li a:hover {
+  color: var(--ioslink-color);
+}
+
+/* media for mobile:375px */
+
+@media screen and (max-width: 376px) {
+  body {
+    background: url(./bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .container {
+    width: 80%;
+    text-align: center;
+  }
+  nav ul {
+    display: inline;
+  }
+  nav ul li {
+    display: block;
+    border-radius: 50px;
+    padding: 15px 50px;
+    margin: 20px 0px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+  .header-text p {
+    font-size: 15.5px;
+    margin-bottom: 50px;
+  }
+  .track,
+  .middle,
+  .workflow,
+  .low h2 {
+    font-size: 25px;
+  }
+  .track,
+  .middle,
+  .workflow,
+  .low p {
+    font-size: 15px;
+  }
+  .function,
+  .workflow,
+  .middle {
+    display: inline-block;
+    margin-top: 50px;
+  }
+  .computer-image {
+    margin-left: 0px;
+  }
+  .computer-image img {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+  }
+  .benefits {
+    padding: 30px;
+    margin: auto;
+  }
+  .benefits p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .benefits h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .middle img {
+    display: block;
+    margin: 70px auto 0px;
+    width: 100%;
+  }
+  .workflow {
+    padding-left: 30px;
+  }
+  .bottom,
+  .company {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+  }
+  .bottom h3 {
+    font-size: 20px;
+  }
+  .bottom,
+  .low p {
+    font-size: 17px;
+  }
+  .bottom img {
+    margin: 30px 0px 0px;
+  }
+  .company img {
+    margin: 20px 0;
+    width: 100px;
+  }
+  .down {
+    display: inline-block;
+    align-items: center;
+  }
+  .down-left {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact {
+    display: inline;
+  }
+  .down-right {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .down-right img {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+  }
+  .bl-logo img {
+    width: 50px;
+    display: block;
+    margin: auto;
+  }
+  .contact ul li {
+    display: inline-block;
+    text-align: center;
+  }
+  .contact ul li a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .con12,
+  .con34,
+  .con5 {
+    width: 10%;
+    flex-basis: 100%;
+  }
+}
